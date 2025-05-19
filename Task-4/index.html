@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopSphere – Fashion, Beauty, Tech & More</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo">Fashio</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#clothing">Clothing</a></li>
+        <li><a href="#beauty">Beauty</a></li>
+        <li><a href="#gadgets">Gadgets</a></li>
+        <li><a href="#decor">Home Décor</a></li>
+        <li><a href="#sports">Sports</a></li>
+        <li><a href="#books">Books</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="home" class="hero">
+      <h1>Your One-Stop Shop for <span class="highlight">Style</span>, <span class="highlight">Beauty</span>, and <span class="highlight">Innovation</span></h1>
+      <p>Fashion trends, makeup must-haves, cool gadgets, décor ideas, sports gear, and best-selling books—all under one vibrant roof.</p>
+      <a href="#clothing" class="cta">Start Exploring</a>
+    </section>
+
+```
+<!-- Clothing -->
+<section id="clothing" class="category card">
+  <h2 class="title-secondary">Trending Clothing</h2>
+  <div class="product-grid">
+    <!-- three clothing cards -->
+    <article class="product-card">
+      <img src="https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/e/4/e4eb86825W1036_1.jpg?tr=w-512" alt="Floral Summer Dress">
+      <div class="content">
+        <h3>Floral Summer Dress</h3>
+        <p>Lightweight, breezy, and perfect for sunny days.</p>
+        <span class="price">₹1,299</span>
+        <button class="buy-btn" onclick="addToCart('Floral Summer Dress')">Add to Cart</button>
+      </div>
+    </article>
+    <article class="product-card">
+      <img src="https://www.parents.com/thmb/R73lhG3zjICD6NQm-iuFKJ-1xpg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/par-im-borrowing-these-under-40-oversized-hoodies-from-my-teen-daughters-closet-tout-63640c97a07549c68037dd2a5dd7a21d.jpg" alt="Comfy Unisex Hoodie">
+      <div class="content">
+        <h3>Comfy Unisex Hoodie</h3>
+        <p>Stay cozy with our premium cotton-blend hoodie.</p>
+        <span class="price">₹1,899</span>
+        <button class="buy-btn" onclick="addToCart('Comfy Unisex Hoodie')">Add to Cart</button>
+      </div>
+    </article>
+    <article class="product-card">
+      <img src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1725966879-mango-wide-leg-jeans-66e02a10419f1.jpg?crop=1.00xw:0.895xh;0,0.0887xh&resize=980:*" alt="Slim-Fit Denim Jeans">
+      <div class="content">
+        <h3>Slim-Fit Denim Jeans</h3>
+        <p>Classic wash with a modern, tapered fit.</p>
+        <span class="price">₹2,499</span>
+        <button class="buy-btn" onclick="addToCart('Slim-Fit Denim Jeans')">Add to Cart</button>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- Beauty -->
+<section id="beauty" class="category">
+  <h2 class="title-accent">Makeup & Beauty Essentials</h2>
+  <div class="product-grid">
+    <!-- three beauty cards -->
+    <article class="product-card">
+      <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTlnkUdv5NWCr-97PInx1W6vbY54NtNC2xCuWPkbE2WSnyvs3p_cVeJRAgZtpG8X-f_5mu_rxmE4ybzHXphhtfG5wzevIeUiDY7fvxnMJFmYrEwrl6uoynC" alt="Matte Liquid Lipstick">
+      <div class="content">
+        <h3>Matte Liquid Lipstick</h3>
+        <p>Long-lasting color in 10 stunning shades.</p>
+        <span class="price">₹799</span>
+        <button class="buy-btn" onclick="addToCart('Matte Liquid Lipstick')">Add to Cart</button>
+      </div>
+    </article>
+    <article class="product-card">
+      <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQI2pxqtUsI8YhjXBY7hnH0EszycPMnFpfalzCbIMRp1-5DIN3a3BCb6tkwc_8-UvDk9muMF5dxttHCakf80O_OiwUSq8tfkrX-xhGGaonH6zuezjNXobL85ZI" alt="Vitamin C Glow Serum">
+      <div class="content">
+        <h3>Vitamin C Glow Serum</h3>
+        <p>Brighten and hydrate for a radiant complexion.</p>
+        <span class="price">₹1,199</span>
+        <button class="buy-btn" onclick="addToCart('Vitamin C Glow Serum')">Add to Cart</button>
+      </div>
+    </article>
+    <article class="product-card">
+      <img src="https://m.media-amazon.com/images/I/51sFDt4+ZkL.jpg" alt="12-Shade Eyeshadow Palette">
+      <div class="content">
+        <h3>12-Shade Eyeshadow Palette</h3>
+        <p>From neutrals to bold hues, create endless looks.</p>
+        <span class="price">₹1,499</span>
+        <button class="buy-btn" onclick="addToCart('Eyeshadow Palette')">Add to Cart</button>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- Gadgets -->
+<section id="gadgets" class="category card">
+  <h2 class="title-secondary">Electronic Gadgets</h2>
+  <div class="product-grid">
+    <!-- three gadget cards -->
+    <article class="product-card">
+      <img src="https://image.made-in-china.com/202f0j00VaSMTUfWOekh/6-5-Inch-Screen-Android-Smartphone-Dual-SIM-3800mAh-4G-Smart-Mobile-Phone.webp" alt="Alpha X Smartphone">
+      <div class="content">
+        <h3>Alpha X Smartphone</h3>
+        <p>6.8″ AMOLED, 108 MP camera, blazing-fast 5G.</p>
+        <span class="price">₹39,999</span>
+        <button class="buy-btn" onclick="addToCart('Alpha X Smartphone')">Add to Cart</button>
+      </div>
+    </article>
+    <article class="product-card">
+      <img src="https://m.media-amazon.com/images/I/41tp0JPPlmL.jpg" alt="Noise-Canceling Headphones">
+      <div class="content">
+        <h3>Noise-Canceling Headphones</h3>
+        <p>Immersive sound with 40-hour battery life.</p>
+        <span class="price">₹7,499</span>
+        <button class="buy-btn" onclick="addToCart('Noise-Canceling Headphones')">Add to Cart</button>
+      </div>
+    </article>
+    <article class="product-card">
+      <img src="https://www.leafstudios.in/cdn/shop/files/1_1099cd20-7237-4bdf-a180-b7126de5ef3d_1024x1024.png?v=1722230645" alt="FitPro Smartwatch">
+      <div class="content">
+        <h3>FitPro Smartwatch</h3>
+        <p>Track fitness, heart rate, and notifications on the go.</p>
+        <span class="price">₹5,299</span>
+        <button class="buy-btn" onclick="addToCart('FitPro Smartwatch')">Add to Cart</button>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- Home Décor -->
+<section id="decor" class="category">
+  <h2 class="title-accent">Home Décor Highlights</h2>
+  <div class="product-grid">
+    <!-- three décor cards -->
+    <article class="product-card">
+      <img src="https://www.whiteteak.com/media/catalog/product/t/l/tl85-10003_5_.jpg?width=680&height=680&canvas=680,680&optimize=medium&fit=bounds" alt="Nordic Table Lamp" />
+      <div class="content">
+        <h3>Nordic Table Lamp</h3>
+        <p>Warm ambient light with minimal design.</p>
+        <span class="price">₹2,199</span>
+        <button class="buy-btn" onclick="addToCart('Nordic Table Lamp')">Add to Cart</button>
+      </div>
+    </article>
+    <article class="product-card">
+      <img src="https://www.nestroots.com/cdn/shop/files/nrdspant607.1.jpg?v=1720006633&width=533" alt="Abstract Wall Art" />
+      <div class="content">
+        <h3>Abstract Wall Art Set</h3>
+        <p>Set of 3 canvas prints to elevate your space.</p>
+        <span class="price">₹3,499</span>
+        <button class="buy-btn" onclick="addToCart('Abstract Wall Art')">Add to Cart</button>
+      </div>
+    </article>
+    <article class="product-card">
+      <img src="https://m.media-amazon.com/images/I/61Ac9wD9P9L.jpg" alt="Faux Monstera Plant" />
+      <div class="content">
+        <h3>Faux Monstera Plant</h3>
+        <p>Add greenery without maintenance.</p>
+        <span class="price">₹1,099</span>
+        <button class="buy-btn" onclick="addToCart('Faux Monstera Plant')">Add to Cart</button>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- Sports -->
+<section id="sports" class="category card">
+  <h2 class="title-secondary">Sports & Fitness</h2>
+  <div class="product-grid">
+    <!-- three sports cards -->
+    <article class="product-card">
+      <img src="https://m.media-amazon.com/images/I/413JJey+suL._AC_.jpg" alt="Eco Yoga Mat" />
+      <div class="content">
+        <h3>Eco Yoga Mat</h3>
+        <p>Non-slip, cushioned, and eco-friendly.</p>
+        <span class="price">₹999</span>
+        <button class="buy-btn" onclick="addToCart('Eco Yoga Mat')">Add to Cart</button>
+      </div>
+    </article>
+    <article class="product-card">
+      <img src="https://m.media-amazon.com/images/I/61MwNosjgaL.jpg" alt="Adjustable Dumbbell Set" />
+      <div class="content">
+        <h3>Adjustable Dumbbell Set</h3>
+        <p>Save space with quick-change weight plates.</p>
+        <span class="price">₹4,799</span>
+        <button class="buy-btn" onclick="addToCart('Adjustable Dumbbell Set')">Add to Cart</button>
+      </div>
+    </article>
+    <article class="product-card">
+      <img src="https://m.media-amazon.com/images/I/815fepH06wL.jpg" alt="Pro Match Football" />
+      <div class="content">
+        <h3>Pro Match Football</h3>
+        <p>FIFA-quality materials for true flight.</p>
+        <span class="price">₹1,599</span>
+        <button class="buy-btn" onclick="addToCart('Pro Match Football')">Add to Cart</button>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- Books -->
+<section id="books" class="category">
+  <h2 class="title-accent">Best-Selling Books</h2>
+  <div class="product-grid">
+    <!-- three book cards -->
+    <article class="product-card">
+      <img src="https://m.media-amazon.com/images/I/81J6APjwxlL.jpg" alt="The Midnight Library" />
+      <div class="content">
+        <h3>The Midnight Library</h3>
+        <p>A moving novel about choices and second chances.</p>
+        <span class="price">₹499</span>
+        <button class="buy-btn" onclick="addToCart('The Midnight Library')">Add to Cart</button>
+      </div>
+    </article>
+    <article class="product-card">
+      <img src="https://m.media-amazon.com/images/I/61M6KzUbf7L._AC_UF1000,1000_QL80_.jpg" alt="Atomic Habits" />
+      <div class="content">
+        <h3>Atomic Habits</h3>
+        <p>Easy & proven ways to build good habits.</p>
+        <span class="price">₹599</span>
+        <button class="buy-btn" onclick="addToCart('Atomic Habits')">Add to Cart</button>
+      </div>
+    </article>
+    <article class="product-card">
+      <img src="https://m.media-amazon.com/images/I/81l3rZK4lnL.jpg" alt="Ikigai" />
+      <div class="content">
+        <h3>Ikigai</h3>
+        <p>Japanese secret to a long and happy life.</p>
+        <span class="price">₹399</span>
+        <button class="buy-btn" onclick="addToCart('Ikigai')">Add to Cart</button>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="contact-section">
+  <h2 class="contact-title">Get in Touch</h2>
+  <form onsubmit="sendEmail(event)">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="email" id="email" placeholder="Your Email" required>
+    <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+```
+
+  </main>
+
+  <footer>
+    © <span id="year"></span> ShopSphere. All rights reserved.
+  </footer>
+</body>
+</html>

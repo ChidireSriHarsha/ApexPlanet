@@ -1,0 +1,75 @@
+/* ========= RESET & BASE ========= */
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:"Segoe UI",Tahoma,Geneva,Verdana,sans-serif;
+  line-height:1.6;
+  background:linear-gradient(135deg,#a18cd1 0%,#fbc2eb 100%);
+  color:#333;
+  --primary:#ff6f91;
+  --secondary:#36c5f0;
+  --accent:#ffe156;
+}
+a{text-decoration:none;color:inherit}
+
+/* ========= LAYOUT ========= */
+header{
+  background:rgba(255,255,255,.85);
+  backdrop-filter:blur(10px);
+  padding:1rem 2rem;
+  display:flex;justify-content:space-between;align-items:center;
+  position:sticky;top:0;z-index:100;
+  box-shadow:0 4px 12px rgba(0,0,0,.1);
+}
+.logo{font-size:1.7rem;font-weight:800;color:var(--primary)}
+nav ul{display:flex;gap:1.5rem;list-style:none}
+nav li{position:relative}
+nav li::after{content:"";position:absolute;left:0;bottom:-4px;width:0;height:3px;
+  background:var(--secondary);transition:width .3s;}
+nav li:hover::after{width:100%}
+
+/* sections now just have padding — no centering */
+section{padding:4rem 2rem;min-height:100vh}
+
+/* Hero only */
+.hero{
+  display:flex;flex-direction:column;justify-content:center;align-items:center;
+  text-align:center;color:#fff;min-height:100vh;
+}
+.hero h1{font-size:2.6rem;margin-bottom:1rem;text-shadow:2px 2px 8px rgba(0,0,0,.2);}
+.highlight{color:var(--accent)}
+.cta{
+  display:inline-block;padding:.75rem 2rem;background:var(--accent);
+  color:#333;border-radius:50px;font-weight:700;transition:transform .3s;
+}
+.cta:hover{transform:translateY(-4px)}
+
+/* ========= CATEGORY SECTIONS ========= */
+.card{background:rgba(255,255,255,.92);border-radius:30px;
+  box-shadow:0 8px 30px rgba(0,0,0,.15);}
+.title-secondary{color:var(--secondary);margin-bottom:1rem;font-size:2.2rem}
+.title-accent{color:var(--accent);margin-bottom:1rem;font-size:2.2rem}
+
+.product-grid{display:grid;gap:2rem;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.product-card{background:#fff;border-radius:20px;overflow:hidden;
+  box-shadow:0 8px 24px rgba(0,0,0,.15);transition:transform .3s;}
+.product-card:hover{transform:translateY(-8px)}
+.product-card img{width:100%;height:200px;object-fit:cover}
+.product-card .content{padding:1rem;text-align:center}
+.product-card h3{color:var(--primary);margin-bottom:.5rem}
+.price{display:block;font-size:1.1rem;font-weight:700;margin:.5rem 0;color:#444}
+.buy-btn{background:var(--primary);color:#fff;border:none;padding:.5rem 1.2rem;
+  border-radius:25px;font-weight:600;cursor:pointer;transition:background .3s;}
+.buy-btn:hover{background:var(--secondary)}
+
+/* ========= CONTACT ========= */
+.contact-section{text-align:center}
+.contact-title{color:#fff;margin-bottom:1rem;font-size:2.2rem;
+  text-shadow:1px 1px 4px rgba(0,0,0,.2);}
+form{display:flex;flex-direction:column;gap:1rem;max-width:500px;width:100%;margin:0 auto}
+input,textarea{padding:.75rem 1rem;border-radius:12px;border:none;
+  box-shadow:0 4px 10px rgba(0,0,0,.1);}
+button{background:var(--primary);color:#fff;border:none;cursor:pointer;
+  padding:.75rem;border-radius:12px;font-weight:600;transition:background .3s;}
+button:hover{background:var(--secondary)}
+
+footer{text-align:center;padding:2rem;color:#fff;font-weight:500}
